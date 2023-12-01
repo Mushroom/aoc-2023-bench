@@ -42,16 +42,9 @@ void Part2()
         {
             string number = numbers[i-1];
 
-            // Find the indexes of occurences of the string-type numbers,
+            // Find the indexes of occurences of the string or integer numbers,
             // then put the values in the Dictionary at that index
-            MatchCollection matches = Regex.Matches(input, number);
-            foreach(Match match in matches)
-            {
-                numberAtIndex[match.Index] = i;
-            }
-
-            // Now do the same, but the the integer format numbers
-            matches = Regex.Matches(input, $"{i}");
+            MatchCollection matches = Regex.Matches(input, $"{number}|{i}");
             foreach(Match match in matches)
             {
                 numberAtIndex[match.Index] = i;
