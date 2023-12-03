@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-var inputFromFile = File.ReadAllText("../../../input.txt");
+var inputFromFile = File.ReadAllText("input.txt");
 var input = inputFromFile.TrimEnd('\n');
 
 void Part1and2()
