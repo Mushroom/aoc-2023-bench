@@ -3,7 +3,7 @@ author: CodIsAFish
 language: C#
 dockerfile: ".docker/Dockerfile"
 code: "/code"
-workdir: "%day%"
+workdir: "/code/%day%"
 runonce: dotnet publish -o publish_dir -c Release
 cmd: publish_dir/Day%day%
 daypath: "%day%"
