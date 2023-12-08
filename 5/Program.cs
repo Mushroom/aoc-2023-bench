@@ -1,6 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 
-var inputFromFile = File.ReadAllLines("../../../input.txt");
+var inputFromFile = File.ReadAllLines("input.txt");
 
 var seeds = Array.ConvertAll(inputFromFile.First().Split(": ")[1].Split(' ', StringSplitOptions.RemoveEmptyEntries), long.Parse);
 
