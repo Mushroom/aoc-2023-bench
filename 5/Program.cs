@@ -76,7 +76,7 @@ void Part2()
                 // Then narrow the mapping space
                 if(rangeVar.start < mapping.start)
                 {
-                    newRanges.Add((range.start, Math.Min(rangeVar.end, mapping.start - 1)));
+                    newRanges.Add((rangeVar.start, Math.Min(rangeVar.end, mapping.start - 1)));
                     rangeVar.start = mapping.start;
                     if(rangeVar.start > rangeVar.end) break;
                 }
